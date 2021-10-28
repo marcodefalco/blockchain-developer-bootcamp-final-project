@@ -11,10 +11,10 @@ contract BlockgemsNFTcollection is ERC721Enumerable, Ownable {
 
   string public baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = 10 finney;
-  uint256 public maxSupply = 5000;
-  uint256 public maxMintAmount = 10;
-  bool public paused = false;
+  uint256 public cost = 0.01 ether;
+  uint256 public maxSupply = 5;
+  uint256 public maxMintAmount = 2;
+  bool public paused = true;
   mapping(address => bool) public whitelisted;
 
   constructor(

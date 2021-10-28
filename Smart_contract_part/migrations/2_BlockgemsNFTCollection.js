@@ -6,8 +6,8 @@ settings = {
 
 }
 
-const NerdyCoderClones = artifacts.require("BlockgemsNFTCollection");
+const BlockgemsNFTcollection = artifacts.require("BlockgemsNFTCollection");
 
 module.exports = function (deployer) {
-  deployer.deploy(BlockgemsNFTCollection, settings.name, settings.symbol, settings.baseURI);
+  deployer.deploy(BlockgemsNFTcollection, settings.name, settings.symbol, settings.baseURI);
 };
