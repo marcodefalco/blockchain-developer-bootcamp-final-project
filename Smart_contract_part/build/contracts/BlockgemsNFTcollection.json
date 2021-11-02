@@ -32973,12 +32973,12 @@
         }
       },
       "links": {},
-      "address": "0x923553842f7347DE87370E0008bCCE9DF51706b6",
-      "transactionHash": "0x1977c33d21585070d99dd9a55697fc14cb5c358d6b38d08bf7025a6106fa90d3"
+      "address": "0xb185F72e8f89291528782400104C2a34dB3f61e7",
+      "transactionHash": "0xf08659813d46f2b35b4884867e32adec24e02987e99261dca67b8dd76a32e8aa"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-01T15:01:37.441Z",
+  "updatedAt": "2021-11-02T09:26:52.616Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
