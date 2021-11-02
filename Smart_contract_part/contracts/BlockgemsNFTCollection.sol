@@ -14,7 +14,7 @@ contract BlockgemsNFTcollection is ERC721Enumerable, Ownable {
   uint256 public cost = 0.01 ether;
   uint256 public maxSupply = 5;
   uint256 public maxMintAmount = 2;
-  bool public paused = true;
+  bool public paused = false;
   mapping(address => bool) public whitelisted;
 
   constructor(
@@ -23,7 +23,7 @@ contract BlockgemsNFTcollection is ERC721Enumerable, Ownable {
     string memory _initBaseURI
   ) ERC721(_name, _symbol) {
     setBaseURI(_initBaseURI);
-    mint(msg.sender, 20);
+    mint(msg.sender, 1); 
   }
 
   // internal

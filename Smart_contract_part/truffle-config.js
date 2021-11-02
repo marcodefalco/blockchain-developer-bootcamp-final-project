@@ -18,10 +18,10 @@
  *
  */
 
- const HDWalletProvider = require('@truffle/hdwallet-provider');
- const infuraKey = '7381bcadf5cc413eb69380a141d79ff8';
- const fs = require('fs');
- const mnemonic = fs.readFileSync(".secret").toString().trim();
+//  const HDWalletProvider = require('@truffle/hdwallet-provider');
+//  const infuraKey = '7381bcadf5cc413eb69380a141d79ff8';
+//  const fs = require('fs');
+//  const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
@@ -33,6 +33,12 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
+   plugins: [
+    'truffle-plugin-verify'
+  ],
+  api_keys: {
+    etherscan: 'C87GF52TP8RTSY7MQBUM16P5CD1RSUQ9VE'
+  },
 
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -60,7 +66,7 @@ module.exports = {
     // rinkeby: {
     // provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
     // network_id: 4,       // Ropsten's id
-    // gas: 9500000,        // Ropsten has a lower block limit than mainnet
+    // gas: 5500000,        // Ropsten has a lower block limit than mainnet
     // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
     // timeoutBlocks: 50,  // # of blocks before a deployment times out  (minimum/default: 50)
     // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
