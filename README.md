@@ -69,6 +69,5 @@ Unit tests:
 just run test_BlockgemsNFTCollection.js using the truffle console.
 
 ## Screencast link:
-short version: 2 minutes:
-longer version, more thorough, tests, minting etc..
+https://www.loom.com/share/76fe5318cc49485f88fdaa3be631ce11
 
