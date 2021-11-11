@@ -1,12 +1,12 @@
 
 settings = {
-  name: 'Blockgems NFT collection',
-  symbol: 'bGEM',
-  _initBaseURI: 'https://replaceme'
+  name: 'Blockgems NFT collection (Rinkeby)',
+  symbol: 'bGEMr',
+  _initBaseURI: 'https://replaceme/'
 
 }
 
-const BlockgemsNFTcollection = artifacts.require("BlockgemsNFTCollection");
+const BlockgemsNFTcollection = artifacts.require("BlockgemsNFTCollectionRinkeby");
 
 module.exports = function (deployer) {
   deployer.deploy(BlockgemsNFTcollection, settings.name, settings.symbol, settings._initBaseURI);
